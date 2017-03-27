@@ -33,10 +33,10 @@
             this.Weather = new System.Windows.Forms.Button();
             this.DayBefore = new System.Windows.Forms.Button();
             this.Calculator = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.ClockB = new System.Windows.Forms.Button();
+            this.ToDoB = new System.Windows.Forms.Button();
+            this.AlbumB = new System.Windows.Forms.Button();
+            this.Memo = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -57,6 +57,7 @@
             this.Weather.TabIndex = 1;
             this.Weather.Text = "Weather";
             this.Weather.UseVisualStyleBackColor = true;
+            this.Weather.Click += new System.EventHandler(this.Weather_Click);
             // 
             // DayBefore
             // 
@@ -66,6 +67,7 @@
             this.DayBefore.TabIndex = 2;
             this.DayBefore.Text = "The day before";
             this.DayBefore.UseVisualStyleBackColor = true;
+            this.DayBefore.Click += new System.EventHandler(this.DayBefore_Click);
             // 
             // Calculator
             // 
@@ -75,42 +77,47 @@
             this.Calculator.TabIndex = 3;
             this.Calculator.Text = "Calculator";
             this.Calculator.UseVisualStyleBackColor = true;
+            this.Calculator.Click += new System.EventHandler(this.Calculator_Click);
             // 
-            // button4
+            // ClockB
             // 
-            this.button4.Location = new System.Drawing.Point(412, 120);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(92, 34);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.ClockB.Location = new System.Drawing.Point(412, 120);
+            this.ClockB.Name = "ClockB";
+            this.ClockB.Size = new System.Drawing.Size(92, 34);
+            this.ClockB.TabIndex = 4;
+            this.ClockB.Text = "World Clock";
+            this.ClockB.UseVisualStyleBackColor = true;
+            this.ClockB.Click += new System.EventHandler(this.ClockB_Click);
             // 
-            // button5
+            // ToDoB
             // 
-            this.button5.Location = new System.Drawing.Point(322, 174);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(92, 34);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
+            this.ToDoB.Location = new System.Drawing.Point(322, 174);
+            this.ToDoB.Name = "ToDoB";
+            this.ToDoB.Size = new System.Drawing.Size(92, 34);
+            this.ToDoB.TabIndex = 5;
+            this.ToDoB.Text = "ToDo List";
+            this.ToDoB.UseVisualStyleBackColor = true;
+            this.ToDoB.Click += new System.EventHandler(this.button5_Click);
             // 
-            // button6
+            // AlbumB
             // 
-            this.button6.Location = new System.Drawing.Point(525, 84);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(92, 34);
-            this.button6.TabIndex = 6;
-            this.button6.Text = "button6";
-            this.button6.UseVisualStyleBackColor = true;
+            this.AlbumB.Location = new System.Drawing.Point(525, 84);
+            this.AlbumB.Name = "AlbumB";
+            this.AlbumB.Size = new System.Drawing.Size(92, 34);
+            this.AlbumB.TabIndex = 6;
+            this.AlbumB.Text = "My Album";
+            this.AlbumB.UseVisualStyleBackColor = true;
+            this.AlbumB.Click += new System.EventHandler(this.AlbumB_Click);
             // 
-            // button7
+            // Memo
             // 
-            this.button7.Location = new System.Drawing.Point(613, 174);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(92, 34);
-            this.button7.TabIndex = 7;
-            this.button7.Text = "button7";
-            this.button7.UseVisualStyleBackColor = true;
+            this.Memo.Location = new System.Drawing.Point(613, 174);
+            this.Memo.Name = "Memo";
+            this.Memo.Size = new System.Drawing.Size(92, 34);
+            this.Memo.TabIndex = 7;
+            this.Memo.Text = "Memo";
+            this.Memo.UseVisualStyleBackColor = true;
+            this.Memo.Click += new System.EventHandler(this.Memo_Click);
             // 
             // UserWindow
             // 
@@ -119,10 +126,10 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(727, 363);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.Memo);
+            this.Controls.Add(this.AlbumB);
+            this.Controls.Add(this.ToDoB);
+            this.Controls.Add(this.ClockB);
             this.Controls.Add(this.Calculator);
             this.Controls.Add(this.DayBefore);
             this.Controls.Add(this.Weather);
@@ -140,9 +147,9 @@
         private System.Windows.Forms.Button Weather;
         private System.Windows.Forms.Button DayBefore;
         private System.Windows.Forms.Button Calculator;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button ClockB;
+        private System.Windows.Forms.Button ToDoB;
+        private System.Windows.Forms.Button AlbumB;
+        private System.Windows.Forms.Button Memo;
     }
 }
