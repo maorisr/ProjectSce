@@ -4,11 +4,11 @@
 </head>
 <body bgcolor = "B8860B">
 <center><br>
-<h1><B><font color= "white" style= "Font-size:70"> Javascript Calculator</font></h1></B>
+<h1><B><font color= "black" style= "font-size:70"> Javascript Calculator</font></h1></B>
 <hr size=20 color="black">
 <div style ="width:261px; background:"FFF8DC">
 <form name= "Calculator">
-<input name="dispaly" placeholder="0" style="width:254px; height:60px; text-align=right; border-radius=8px; margin:3px"/>
+<input name="dispaly" placeholder="0" style="width:254px; font-size:70; height:60px; text-align=right; border-radius=8px; margin:3px"/>
 <br>
 <input type="button" value="7" onclick="document.Calculator.dispaly.value +='7'" style="width:60px; height:60px; font-size:30; border-radius:8px; margin:3px"/>
 <input type="button" value="8" onclick="document.Calculator.dispaly.value +='8'" style="width:60px; height:60px; font-size:30; border-radius:8px;"/>
