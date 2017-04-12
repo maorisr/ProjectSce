@@ -1,13 +1,7 @@
-Dashboard... Logged in only..
-<br />
+<center><FONT SIZE=4>Current page: Dashboard</FONT><br><br>
+    <FONT SIZE=5><b><U>Choose a widget:</U></b><br>
 
-<form action="<?php echo URL;?>weather/index/">
-    <input type="submit" value="Weather" />
-</form>
-<form action="<?php echo URL;?>calculator/index/">
-    <input type="submit" value="Calculator" />
-</form>
-<br />
-<div id="listInserts">
-    
-</div>
+<a href="<?php echo URL; ?>weather">weather</a>
+<a href="<?php echo URL; ?>calculator">calculator</a>
+</FONT>
+</center>

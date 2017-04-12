@@ -4,7 +4,7 @@
 </head>
 <body bgcolor = "B8860B">
 <center><br>
-<h1><B><font color= "black" style= "Font-size:70"> Javascript Calculator</font></h1></B>
+<h3><font color= "black" style= "Font-size:40">Calculator widget</font></h3>
 <hr size=40 color="black">
 <div style ="width:261px; background:FFF8DC">
 <form name= "Calculator">
@@ -13,7 +13,7 @@
 <input type="button" value="7" onclick="document.Calculator.display.value +='7'" style="width:60px; height:60px; font-size:30; border-radius:8px; margin:3px"/>
 <input type="button" value="8" onclick="document.Calculator.display.value +='8'" style="width:60px; height:60px; font-size:30; border-radius:8px;"/>
 <input type="button" value="9" onclick="document.Calculator.display.value +='9'" style="width:60px; height:60px; font-size:30; border-radius:8px;"/>
-<input type="button" value="+" onclick="btnplus()" style="width:60px; height:60px; font-size:30; border-radius:8px;"/>
+<input type="button" value="-" onclick="btnsub()" style="width:60px; height:60px; font-size:30; border-radius:8px;"/>
 
 <br>
 <input type="button" value="4" onclick="document.Calculator.display.value +='4'" style="width:60px; height:60px; font-size:30; border-radius:8px; margin:3px"/>
@@ -91,6 +91,7 @@ function btnclear()
 
 
 </SCRIPT>
+<a href="<?php echo URL; ?>dashboard">Back</a>
 </center>
 </BODY>
 </html>
