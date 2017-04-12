@@ -1,13 +1,4 @@
 Dashboard... Logged in only..
 <br />
-
-<form action="<?php echo URL;?>weather/index/">
-    <input type="submit" value="Weather" />
-</form>
-<form action="<?php echo URL;?>calculator/index/">
-    <input type="submit" value="Calculator" />
-</form>
+<a href="<?php echo URL; ?>weather">weather</a>
 <br />
-<div id="listInserts">
-    
-</div>
