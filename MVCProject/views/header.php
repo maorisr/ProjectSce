@@ -1,7 +1,8 @@
+<center>
 <!doctype html>
 <html>
     <head>
-        <title>Team H Project</title>
+    <h1>Welcome to team H Project</h1>
         <link rel="stylesheet" href="<?php echo URL; ?>public/css/default.css" />
         <script type="text/javascript" src="<?php echo URL; ?>public/js/jquery.js"></script>
         <script type="text/javascript" src="<?php echo URL; ?>public/js/custom.js"></script>
@@ -19,7 +20,7 @@
 <?php Session::init(); ?>
 
         <div id="header">
-            header
+            <b><FONT SIZE=4>Menu:</b>
             <br />
 <?php if (Session::get('loggedIn') == true): ?>
                 <a href="<?php echo URL; ?>dashboard">Dashboard</a>	
@@ -35,4 +36,6 @@
         </div>
 
         <div id="content">
+        </FONT>
+</center>
 

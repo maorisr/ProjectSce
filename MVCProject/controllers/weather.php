@@ -10,7 +10,9 @@ class Weather extends Controller {
         $this->view->render('weather/index');
     }
     
-    function get(){
-        $this->model->get();
+    function run(){
+        $this->view->data=$this->model->run();
+        $this->view->render('weather/answer');
     }
+
 }

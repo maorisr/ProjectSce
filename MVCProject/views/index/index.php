@@ -1,1 +1,3 @@
-This is the main page welcome!
+<center>
+<FONT SIZE=4>Current page: Index page</FONT><br><br>
+</center>
