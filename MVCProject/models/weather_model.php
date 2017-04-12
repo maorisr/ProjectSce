@@ -8,7 +8,6 @@ class Weather_Model extends Model {
     public function __construct() {
         parent::__construct();
     }
-
     public function run() {
 
         if (isset($_GET['city'])) {
