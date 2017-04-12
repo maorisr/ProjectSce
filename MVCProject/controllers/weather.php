@@ -11,9 +11,8 @@ class Weather extends Controller {
     }
   
     function run(){
-        $this->model->run();
-    }
-    function answer(){
+        $this->view->data=$this->model->run();
         $this->view->render('weather/answer');
     }
+
 }

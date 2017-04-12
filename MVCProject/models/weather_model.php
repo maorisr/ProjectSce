@@ -4,7 +4,7 @@ class Weather_Model extends Model {
 
     private $user_city = null;
     private $user_country = null;
-    public $weather=null;
+    private $weather=null;
     public function __construct() {
         parent::__construct();
     }
@@ -20,8 +20,7 @@ class Weather_Model extends Model {
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
             $json_output = curl_exec($ch);
             $this->weather = json_decode($json_output);
-            header('location: ../answer');
-
+            return $this->weather;
         }
     }
 
