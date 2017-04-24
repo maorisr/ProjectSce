@@ -2,6 +2,45 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/C:/xampp/htdocs/MVCProject/libs/Session.php</file>
+            <file>file:/C:/xampp/htdocs/MVCProject/models/register_model.php</file>
+            <file>file:/C:/xampp/htdocs/MVCProject/index.php</file>
+            <file>file:/C:/xampp/htdocs/MVCProject/models/dashboard_model.php</file>
+            <file>file:/C:/xampp/htdocs/MVCProject/controllers/register.php</file>
+            <file>file:/C:/xampp/htdocs/MVCProject/models/weather_model.php</file>
+            <file>file:/C:/xampp/htdocs/MVCProject/models/calculator_model.php</file>
+            <file>file:/C:/xampp/htdocs/MVCProject/views/dashboard/index.php</file>
+            <file>file:/C:/xampp/htdocs/MVCProject/libs/Bootstrap.php</file>
+            <file>file:/C:/xampp/htdocs/MVCProject/controllers/calculator.php</file>
+            <file>file:/C:/xampp/htdocs/MVCProject/views/calculator/index.php</file>
+            <file>file:/C:/xampp/htdocs/MVCProject/views/weather/answer.php</file>
+            <file>file:/C:/xampp/htdocs/MVCProject/models/help_model.php</file>
+            <file>file:/C:/xampp/htdocs/MVCProject/config/paths.php</file>
+            <file>file:/C:/xampp/htdocs/MVCProject/public/js/custom.js</file>
+            <file>file:/C:/xampp/htdocs/MVCProject/libs/View.php</file>
+            <file>file:/C:/xampp/htdocs/MVCProject/libs/Database.php</file>
+            <file>file:/C:/xampp/htdocs/MVCProject/views/index/index.php</file>
+            <file>file:/C:/xampp/htdocs/MVCProject/controllers/help.php</file>
+            <file>file:/C:/xampp/htdocs/MVCProject/views/header.php</file>
+            <file>file:/C:/xampp/htdocs/MVCProject/libs/Model.php</file>
+            <file>file:/C:/xampp/htdocs/MVCProject/views/error/index.php</file>
+            <file>file:/C:/xampp/htdocs/MVCProject/controllers/index.php</file>
+            <file>file:/C:/xampp/htdocs/MVCProject/controllers/dashboard.php</file>
+            <file>file:/C:/xampp/htdocs/MVCProject/models/login_model.php</file>
+            <file>file:/C:/xampp/htdocs/MVCProject/views/help/index.php</file>
+            <file>file:/C:/xampp/htdocs/MVCProject/public/js/jquery.js</file>
+            <file>file:/C:/xampp/htdocs/MVCProject/public/css/default.css</file>
+            <file>file:/C:/xampp/htdocs/MVCProject/libs/Controller.php</file>
+            <file>file:/C:/xampp/htdocs/MVCProject/views/register/index.php</file>
+            <file>file:/C:/xampp/htdocs/MVCProject/controllers/error.php</file>
+            <file>file:/C:/xampp/htdocs/MVCProject/config/database.php</file>
+            <file>file:/C:/xampp/htdocs/MVCProject/.htaccess</file>
+            <file>file:/C:/xampp/htdocs/MVCProject/views/weather/index.php</file>
+            <file>file:/C:/xampp/htdocs/MVCProject/controllers/login.php</file>
+            <file>file:/C:/xampp/htdocs/MVCProject/views/login/index.php</file>
+            <file>file:/C:/xampp/htdocs/MVCProject/views/footer.php</file>
+            <file>file:/C:/xampp/htdocs/MVCProject/controllers/weather.php</file>
+        </group>
     </open-files>
 </project-private>

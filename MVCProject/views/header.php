@@ -1,7 +1,7 @@
-<center>
-<!doctype html>
+<!DOCTYPE html>
 <html>
     <head>
+    <center>
     <h1>Welcome to team H Project</h1>
         <link rel="stylesheet" href="<?php echo URL; ?>public/css/default.css" />
         <script type="text/javascript" src="<?php echo URL; ?>public/js/jquery.js"></script>
@@ -36,6 +36,5 @@
         </div>
 
         <div id="content">
-        </FONT>
-</center>
+        <!--</FONT>-->
 
