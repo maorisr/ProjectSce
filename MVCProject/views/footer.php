@@ -1,8 +1,7 @@
 </div>
-
 <div id="footer">
-	(C) Footer
+	(C) Team H Project
 </div>
-
+</center>
 </body>
 </html>

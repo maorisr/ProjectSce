@@ -17,7 +17,7 @@ class Login_Model extends Model {
 
     public function error($msg) {
         require 'controllers/error.php';
-        $controller = new Error();
+        $controller = new ErrorClass();
         $controller->index($msg);
         return false;
     }
