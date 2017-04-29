@@ -1,0 +1,39 @@
+<!--<html>
+    <body>
+        <center>
+        <select id="city">
+            <option value="ashdod">Ashdod</option>
+            <option value="telAviv">Tel-aviv</option>
+            <option value="newYork">New-York</option>
+        </select>
+            <button onClick = "weather/run/"> Click here </button>
+        </center>
+    </body>
+</html>-->
+
+<html>
+    <title>Weather page - Team H</title>
+    <script src="view.js"></script>
+    <body>
+    <center>       
+        Pick a city: <input id="city" type="text" name="city" placeholder="write here..."/><br />
+        <input type="button" value="Submit" onsubmit="run()" onclick ="run()"/>
+        <section id ="left" style="display: none;">
+            <div id="Weather">
+                <hr /> 
+                <h1>Current Weather in: <span id="userCity" ></span></h1>
+                <font size="4" color="black">Region: <span id="region"></span></font><br>
+                <font size="4" color="black">Country: <span id="country"></span></font><br>
+                <font size="4" color="black">Temperature: <span id="temperature"></span></font><br>
+                <font size="4" color="black">Feels like: <span id="feelsLike"></span></font><br>
+                <span><img id="conditionImage" align="middle" width="125" height="125"> </span>
+                <br><font size="4" color="black">Condition: <span id="conditionText"></span></font><br>
+                <font size="4" color="black">Wind in Mph: <span id="windMph"></span></font><br>
+                <font size="4" color="black">Wind in Kph: <span id="windKph"></span></font><br>
+                <font size="4" color="black">Wind in dgree: <span id="windDegree"></span></font><br>
+                <font size="4" color="black">Updated On: <span id="updatedOn"></span></font><br>
+            </div>
+        </section>
+    </center>
+</body>
+</html>
