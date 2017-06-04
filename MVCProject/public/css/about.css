@@ -1,0 +1,25 @@
+div.about {
+    background-color: #ffffff;
+}
+div.about p {
+    text-align: center;
+    font-family: Arial;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: none;
+    color: #3304a0;
+    background-color: #ffffff;
+}
+div.index p {
+    text-align: center;
+    font-family: Arial;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: none;
+    color: #3304a0;
+    background-color: #ffffff;
+}

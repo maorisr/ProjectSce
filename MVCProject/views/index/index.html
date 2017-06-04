@@ -1,0 +1,16 @@
+<html>
+    <title>Index page - Team H</title>
+    <link rel="stylesheet" href="<?php echo URL; ?>public/css/about.css" />
+    <div class="index">
+        <p><FONT SIZE=6>Welcome to Team's H Project</FONT><br><br></p>
+        <?php if (Session::get('loggedIn') == true): ?>
+        <p><FONT SIZE=3>You are connected.</FONT><br><br><br><br><br><br><br></p>
+        <?php endif; ?>
+        <?php if (Session::get('loggedIn') == false): ?>
+        <p><FONT SIZE=3>You are NOT connected.</FONT><br><br><br><br><br><br><br></p>
+        <?php endif; ?>
+
+    </div>
+
+</html>
+

@@ -1,0 +1,86 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+body{
+    font-family:Arial;
+    font-size:16px;
+    margin:16px;
+    color:black;
+}
+h2,p{
+    font-size:20px;
+    font-weight:normal;
+}
+ul,li{
+    list-style:none;
+}
+ul{
+    overflow:hidden;
+    padding:12px;   /*space from the screen*/
+}
+ul li a{
+    text-decoration: none;
+    color:#000;
+    display: block;
+    height:160px;
+    width:160px;
+    padding:16px;    /*space between the sticky notes*/
+    margin-top:20px;
+    box-shadow:5px 5px 7px rgba(33,33,33,.7);  /*horizontal vertiacl blurr color*/
+    transition:transform .15s linear;
+}
+
+ul li{
+    margin:16px;
+    float:left; /*display the sticky note in a series*/
+}
+ul li h2{
+    font-size: 140%;
+    font-weight:bold;
+    padding-bottom:10px;
+    
+}
+ul li p{
+    font-family: cursive;
+    font-size:110%;
+    overflow-wrap: break-word;
+}
+
+ul li a{
+    transform:rotate(-6deg);
+}
+ul li:nth-child(even) a{
+    transform:rotate(4deg);
+    position:relative;
+    top:5px;
+}
+ul li:nth-child(3n) a{
+    transform:rotate(-3deg);
+    position:relative;
+    top:-5px;
+}
+ul li:nth-child(5n) a{
+    transform:rotate(5deg);
+    position:relative;
+    top:-10px;
+}
+
+ul li a:hover,ul li a:focus{
+    box-shadow:10px 10px 7px rgba(0,0,0,.7);
+    transform:scale(1.25);
+    position:relative;
+    z-index:5;
+}
+li:nth-child(6n){
+    display: inline;
+}
+
+input[type=button]
+{
+    width: 15%;
+    padding: 4px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}

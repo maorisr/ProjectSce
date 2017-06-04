@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+    <link rel="stylesheet" href="<?php echo URL; ?>public/css/calc.css" />
+    <title>Calculator</title>
+    <body>
+    <center>
+
+        <script src="view.js"></script>
+        <div id="container">
+            <form name="frm">
+                <input id="textbox" disabled="disabled" type="text" name="txt"><br>
+                <input class="btn" type="button" name="brr" value=")"   onClick="dis(brr.value)">
+                <input class="btn" type="button" name="brl" value="("   onClick="dis(brl.value)">
+                <input class="btn" id="CE" type="button" value="CE" name="CE"  onClick="ce()">
+                <input class="btn" id="BackSpace" value="Clear" type="button" name="BackSpace" onClick="BS()"><br>
+                <input class="btn" type="button" name="btn9" value="9"  onClick="dis(btn9.value)">
+                <input class="btn" type="button" name="btn8" value="8"  onClick="dis(btn8.value)">
+                <input class="btn" type="button" name="btn7" value="7"   onClick="dis(btn7.value)" >
+                <input class="btn" type="button" name="btnMul" value="*"  onClick="dis(btnMul.value)" ><br>
+                <input class="btn" type="button" name="btn6" value="6"  onClick="dis(btn6.value)">
+                <input class="btn" type="button" name="btn5" value="5"  onClick="dis(btn5.value)">
+                <input class="btn" type="button" name="btn4" value="4" onClick="dis(btn4.value)">
+                <input class="btn" type="button" name="btnDiv" value="/" onClick="dis(btnDiv.value)"><br>
+                <input class="btn" type="button" name="btn3" value="3"  onClick="dis(btn3.value)">
+                <input class="btn" type="button" name="btn2" value="2" onClick="dis(btn2.value)">
+                <input class="btn" type="button" name="btn1" value="1" onClick="dis(btn1.value)" >
+                <input class="btn" type="button" name="btnPlus" value="+"  onClick="dis('+')" ><br>
+                <input class="btn" type="button" name="btnZero" value="0"  onClick="dis(btnZero.value)">
+                <input class="btn" type="button" name="btnPoint" value="."   onClick="dis(btnPoint.value)">
+                <input class="btn" type="button" name="btnEqual" value="="  onClick="run()" >
+                <input class="btn" type="button" name="btnMinus" value="-"  onClick="dis(btnMinus.value)">
+            </form>
+        </div>
+        <br><br>
+<!--        <a href="<?php echo URL; ?>dashboard">Back</a>-->
+    </center>
+</body>
+</html>
