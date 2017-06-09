@@ -2,6 +2,8 @@
 </body>
 </center>
 
+<!--This is the footer page of the project that will shown in all the pages-->
+
 </div>
 <div id="footer">
     <footer>

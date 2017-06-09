@@ -2,6 +2,8 @@
 
 class Dashboard extends Controller {
 
+// Controller dashboard constructor
+
     function __construct() {
         parent::__construct();
         Session::init();
@@ -11,28 +13,27 @@ class Dashboard extends Controller {
             header('location: ../login');
             exit;
         }
-        $this->view->js= array('dashboard/js/default.js');
+        $this->view->js = array('dashboard/js/default.js');
     }
 
+//The page that shown to the user
     function index() {
         $this->view->render('dashboard/index');
     }
 
+// Log out the user
     function logout() {
         Session::destroy();
         header('location: ../login');
         exit;
     }
-    function xhrInsert()
-    {
+
+    function xhrInsert() {
         $this->model->xhrInsert();
     }
-    function xhrGetListings()
-    {
+
+    function xhrGetListings() {
         $this->model->xhrGetListings();
-        
-        
     }
-    
 
 }

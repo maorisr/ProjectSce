@@ -1,9 +1,9 @@
 <?php
 
 class View {
-
+    
+    // This class responsible about the view of the user.
     function __construct() {
-        //echo 'this is the view';
     }
 
     public function render($name, $noInclude = false) {

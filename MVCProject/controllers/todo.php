@@ -1,12 +1,13 @@
 <?php
 
 class todo extends Controller {
-
+    // Controller constructor    
     function __construct() {
         parent::__construct();
         Session::init();
         $this->view->js = array('todo/todoview.js');
     }
+    //The page that shown to the user
 
     function index() {
         $this->view->render('todo/index');

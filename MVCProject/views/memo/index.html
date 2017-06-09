@@ -1,4 +1,4 @@
-<html>
+<!--<html>
     <title>Memo page - Team H</title>
     <body>
     <center>       
@@ -12,7 +12,34 @@
         <input type="button" value="Delete This Memo" onclick ="remove();"/>
         <br/>Select a color:
         <input type="color" name="memocolor" id="memocolor" value="#ffff99">
-<!--        <br><br><br><br><br>-->
+        <br><br><br><br><br>
+
+    </center>
+</body>
+</html>-->
+
+
+<html>
+    <title>Memo page - Team H</title>
+    <body>
+    <center>       
+        <script src="memoview.js"></script>
+        <link rel="stylesheet" href="<?php echo URL; ?>public/css/main.css" />
+        <link rel="stylesheet" href="<?php echo URL; ?>public/css/memo.css" />
+        <!--using some jquery in js-->
+        <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+        
+        <!--submit form here-->
+        Add Note:<br><textarea name="textarea" id="textarea" style="width:350px;height:100px;"></textarea><br>
+        <input type="button" value="Submit" onclick ="add();"/>
+        <input type="button" value="Delete This Memo" onclick ="remove();"/>
+        <br/>Select a color:
+        <input type="color" name="memocolor" id="memocolor" value="#ffff99">
+
+        <!--sticky notes here-->
+        <ul id="noteList">
+        </ul><br><br><br><br><br>
+        
 
     </center>
 </body>

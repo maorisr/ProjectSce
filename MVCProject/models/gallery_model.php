@@ -1,11 +1,12 @@
 <?php
 
 class Gallery_Model extends Model {
-
+    //Gallery model constructor
     public function __construct() {
         parent::__construct();
     }
 
+    // This function takes data of pictures from external API and returns the data that the user ask as JSON, and then this data will shown in the UI
     public function run() {
         if (isset($_GET['category'])) {
             $userCategory = $_GET['category'];

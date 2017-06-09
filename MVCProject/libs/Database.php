@@ -2,10 +2,14 @@
 
 class Database {
 
+ // In that class will be All the functions associated with the Database.
+ // For ex.: adding an user to the database, check if user exists, add memo or TODO list to the data base and more.
+   
+    
+    
     public $connection;
 
     public function __construct() {
-        //parent::__construct(DB_TYPE.':host='.DB_HOST.';dbname='.DB_NAME, DB_USER, DB_PASS); 
         $this->connection = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME);
         Session::init();
     }
@@ -49,21 +53,16 @@ class Database {
 
   
     function readRows() {
-        //global $connection;
         $query = "SELECT * FROM users";
         $result = mysqli_query($this->connection, $query);
         if (!$result) {
             die("Query FAIELD" . mysqli_error());
         }
-//        while ($row = mysqli_fetch_assoc($result)) {
-//            print_r($row);
-//        }
         return $result;
     }
 
 
     function showAllData() {
-        //global $connection;
         $query = "SELECT * FROM users";
 
         $result = mysqli_query($this->connection, $query);
@@ -130,7 +129,6 @@ class Database {
 
     function selectFromTodo() {
         $user = SESSION::get('username');
-        //WEHRE user = '$user'";
         $query = "SELECT * FROM todo WHERE `user`='$user'";
         $result = mysqli_query($this->connection, $query);
         if (!$result) {
@@ -177,9 +175,7 @@ class Database {
 
     function uploadPhoto() {
         $imagename = $_FILES["myimage"]["name"];
-        //Get the content of the image and then add slashes to it 
         $imagetmp = addslashes(file_get_contents($_FILES['myimage']['tmp_name']));
-        //Insert the image name and image content in image_table
         $insert_image = "INSERT INTO image_table VALUES('$imagetmp','$imagename')";
         mysql_query($insert_image);
     }
@@ -235,8 +231,6 @@ class Database {
         }
         $user = SESSION::get('username');
         $query = "INSERT INTO `memo`(`username`, `text`, `color`) VALUES ('$user','$text','$color')";
-//        str_replace(":user",SESSION::get('username'),$query);
-//        str_replace(":text",$text,$query);
 
         $result = mysqli_query($this->connection, $query);
         if (!$result) {

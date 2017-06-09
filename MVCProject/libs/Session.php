@@ -1,7 +1,7 @@
 <?php
 
 class Session {
-
+// Class that responsible about the user login
     public static function init() {
         @session_start();
     }
@@ -16,7 +16,6 @@ class Session {
     }
 
     public static function destroy() {
-        //unset($_SESSION);
         session_unset();
         session_destroy();
     }

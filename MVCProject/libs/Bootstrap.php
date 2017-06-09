@@ -1,9 +1,9 @@
 <?php
+// A part of the MVC dp, that run the project
 
 class Bootstrap {
-
     function __construct() {
-
+// constructor - dealing with the path of the project (htacces)
         $url = isset($_SERVER['REQUEST_URI']) ? $_SERVER['REQUEST_URI'] : null;
         $url=str_replace("/MVCProject", "", $url);
         $url = ltrim($url, '/');
@@ -49,7 +49,7 @@ class Bootstrap {
         }
                     
     }
-	
+    // If there is an error, creating an object of class error, and show the error to the user
     function error() {
         require 'controllers/ErrorClass.php';
         $controller = new ErrorClass();

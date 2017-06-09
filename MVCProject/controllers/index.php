@@ -6,12 +6,12 @@ class Index extends Controller {
         parent::__construct();
         session::init();
     }
+    //The page that shown to the user
 
     function index() {
-//        echo 'INSIDE INDEX INDEX';
         $this->view->render('index/index');
     }
-
+    // Run the model of the widget and proccecing the data for the user
     function details() {
         $this->view->render('index/index');
     }

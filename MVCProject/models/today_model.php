@@ -1,7 +1,6 @@
 <?php
 class Today_Model extends Model /**extends Model**/
 {
-
     private $data;
 
     public function __construct()
@@ -12,12 +11,13 @@ class Today_Model extends Model /**extends Model**/
 
     public function run()
     {
-        $url = "http://history.muffinlabs.com/date";
-        $result = file_get_contents($url);
-        $parsed_json = json_decode($result);
+        $url = "http://history.muffinlabs.com/date";//the today api which get and sorts the information from wikipedia
+        $result = file_get_contents($url);//gets the file content
+        $parsed_json = json_decode($result);//pars it into json
+        //sorts all the data into local variables
         $date = $parsed_json->{'date'};
         $link = $parsed_json->{'url'};
-        $i = rand(0, 20);
+        $i = rand(0, 20);//takes a random event out of 20
         $year = $parsed_json->{'data'}->{'Events'}[$i]->{'year'};
         $text = $parsed_json->{'data'}->{'Events'}[$i]->{'html'};
         $json = [
@@ -26,7 +26,7 @@ class Today_Model extends Model /**extends Model**/
             "year" => $year,
             "text" => $text,
         ];
-        echo json_encode($json);
+        echo json_encode($json);//echos the json
     }
 }
 

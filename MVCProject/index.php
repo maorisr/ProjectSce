@@ -1,4 +1,5 @@
 <?php
+// Creating a Bootstrap object that run the program
 
 // Use an autoloader!
 require 'libs/Bootstrap.php';

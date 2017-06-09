@@ -1,7 +1,7 @@
 function run1()
 {
     var cObj;
-    var url = "http://localhost:81/MVCProject/today/run";
+    var url = "http://localhost:81/MVCProject/today/run";//gets the API
     var historycon = new XMLHttpRequest();
     historycon.onreadystatechange = function () {
         if (this.readyState === 4 && this.status === 200) {
@@ -10,6 +10,7 @@ function run1()
                 return;
             }
             cObj = JSON.parse(this.responseText);
+            //parses the json in to cObj
             document.getElementById('link').innerHTML = cObj.link;
             document.getElementById('date').innerHTML = cObj.date;
             document.getElementById('year').innerHTML = cObj.year;

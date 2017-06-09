@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+
+<!--This is the header page of the project that will shown in all the pages-->
+
 <html>
     <head>
     <center>
