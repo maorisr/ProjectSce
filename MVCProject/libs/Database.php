@@ -14,6 +14,7 @@ class Database {
         Session::init();
     }
 
+    // Adding an user to the database with input valid check
     function createRows() {
         global $connection;
         $username = $_POST['username'];
@@ -51,7 +52,7 @@ class Database {
         return true;
     }
 
-  
+   // Read a data from the DB
     function readRows() {
         $query = "SELECT * FROM users";
         $result = mysqli_query($this->connection, $query);
@@ -62,6 +63,7 @@ class Database {
     }
 
 
+    // Show the data
     function showAllData() {
         $query = "SELECT * FROM users";
 
@@ -74,6 +76,8 @@ class Database {
             echo "<option value='$id'>$id</option>";
         }
     }
+    
+    // Update the DB table TODO
     function UpdateTodo(){
         global $connection;
         $text = $_GET['text'];
@@ -89,6 +93,8 @@ class Database {
             return true;
         }
     }
+    
+    // Update the table
     function UpdateTable() {
         if (isset($_POST['submit'])) {
             //global $connection;
@@ -108,7 +114,7 @@ class Database {
             }
         }
     }
-
+    // Delete rows for the table in the DB
     function deleteRows() {
         if (isset($_POST['submit'])) {
             global $connection;
@@ -127,6 +133,7 @@ class Database {
         }
     }
 
+    // Select an TODO row from the table
     function selectFromTodo() {
         $user = SESSION::get('username');
         $query = "SELECT * FROM todo WHERE `user`='$user'";
@@ -137,6 +144,7 @@ class Database {
         return mysqli_fetch_all($result);
     }
 
+    // Adding a TODO
     function createRowsInTodo() {
         global $connection;
         $text = $_GET['text'];
@@ -157,6 +165,7 @@ class Database {
         }
     }
 
+    // Delete a todo from the DB table
     function deleteRowsFromTodo() {
         if (isset($_GET['text'])) {
             global $connection;
@@ -173,6 +182,7 @@ class Database {
         }
     }
 
+    // Not in use
     function uploadPhoto() {
         $imagename = $_FILES["myimage"]["name"];
         $imagetmp = addslashes(file_get_contents($_FILES['myimage']['tmp_name']));
@@ -180,13 +190,14 @@ class Database {
         mysql_query($insert_image);
     }
 
+    // Showing an error if happend
     function error($msg) {
         require 'controllers/ErrorClass.php';
         $controller = new ErrorClass();
         $controller->index($msg);
         return false;
     }
-
+    // Checking if the user exists
     function checkExist($user, $password) {
         $rows = $this->readRows();
         while ($row = mysqli_fetch_assoc($rows)) {
@@ -196,6 +207,7 @@ class Database {
         }
         return false;
     }
+    // Delete a memo from the DB table
  function deleteRowsFromMemo() {
         if (isset($_GET['user'])and isset($_GET['text'])and isset($_GET['color'])) {
             global $connection;
@@ -211,6 +223,7 @@ class Database {
             }
         }
     }
+    // Read an memo from the DB table
   function readRowsFromMemo() {
         //global $connection;
         $user=SESSION::get('username');
@@ -221,6 +234,7 @@ class Database {
         }
         return mysqli_fetch_all($result);
     }
+    // adding new memo to the DB
     function createRowsInMemo() {
         global $connection;
         $text = $_GET['text'];

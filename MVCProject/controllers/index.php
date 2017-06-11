@@ -1,4 +1,5 @@
 <?php
+// This class is not in use. that was need to be the model of Help page, that we didnt create.
 
 class Index extends Controller {
 

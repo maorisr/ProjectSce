@@ -1,7 +1,8 @@
 <?php
 
-class Session {
 // Class that responsible about the user login
+
+class Session {
     public static function init() {
         @session_start();
     }

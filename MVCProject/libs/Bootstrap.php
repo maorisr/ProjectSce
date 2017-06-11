@@ -10,8 +10,6 @@ class Bootstrap {
         $url = rtrim($url, '/');
         $url = explode('/', $url);
 
-        //print_r($url);
-
         if (empty($url[0])) {
             require 'controllers/index.php';
             $controller = new Index();

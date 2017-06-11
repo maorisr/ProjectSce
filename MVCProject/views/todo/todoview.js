@@ -144,6 +144,4 @@ window.onload = function () {
             };
         }
     }
-
-
 }
