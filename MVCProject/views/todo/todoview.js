@@ -1,5 +1,5 @@
 
-// Click on a close button to hide the current list item
+// Click on a close button to delete item from the list
 var close = document.getElementsByClassName("close");
 var i;
 for (i = 0; i < close.length; i++) {
@@ -9,11 +9,11 @@ for (i = 0; i < close.length; i++) {
     }
 }
 
-
+// Mark the task as done, also in the database
 function sendToDone(inputValue, ev) {
     var url1 = "http://localhost:81/MVCProject/todo/done/?text=";
     url1 = url1 + inputValue;
-    if (ev.target.classList.contains('checked'))
+    if (ev.target.classList.contains('checked')) // mark as checked - update the db accordingly
         url1 = url1 + "&done=1";
     else
         url1 = url1 + "&done=0";
@@ -28,10 +28,10 @@ function sendToDone(inputValue, ev) {
 // Create a new list item when clicking on the "Add" button
 function newElement() {
     var li = document.createElement("li");
-    var inputValue = document.getElementById("myInput").value;
+    var inputValue = document.getElementById("myInput").value; //get the data from the html page
     var t = document.createTextNode(inputValue);
     li.appendChild(t);
-    if (inputValue === '') {
+    if (inputValue === '') { // user didn't insert string
         alert("You must write something!");
     } else {
         document.getElementById("myUL").appendChild(li);
@@ -51,12 +51,13 @@ function newElement() {
     xhttp.send();
 
 
-
+    // create "close" button
     var span = document.createElement("SPAN");
     var txt = document.createTextNode("\u00D7");
     span.className = "close";
     span.appendChild(txt);
     li.appendChild(span);
+
     //clicked section
     var list = document.querySelector('ul');
     list.addEventListener('click', function (ev) {
@@ -65,7 +66,7 @@ function newElement() {
             sendToDone(inputValue, ev);
         }
     }, false);
-
+    // delete selected task
     for (i = 0; i < close.length; i++) {
         close[i].onclick = function () {
             var div = this.parentElement;
@@ -75,7 +76,7 @@ function newElement() {
     }
 }
 
-//delete an object
+//delete task
 function deleteObj(inputValue) {
     var url1 = "http://localhost:81/MVCProject/todo/deleteTODO/?text=";
     url1 = url1 + inputValue;
@@ -98,7 +99,7 @@ function Read() {
     };
     xhttp.open("GET", url1, false);
     xhttp.send();
-    return cObj;
+    return cObj; //sends back as json
 
 }
 
